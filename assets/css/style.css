@@ -1,0 +1,41 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0px; }
+
+.row {
+  height: 100vh;
+  min-height: 450px;
+  text-align: center;
+  display: inline-block;
+  width: 100vw; }
+
+#colorMenu {
+  float: right;
+  right: 2vh;
+  position: fixed;
+  list-style: none;
+  margin-top: 5px; }
+
+#colorMenu li a {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 100%;
+  width: 99vh;
+  height: 99vh;
+  margin: 0.5vh 0 0;
+  display: block; }
+
+#colorMenu li a.active {
+  animation-name: flip-left;
+  -webkit-animation-name: flip-left; }
+
+.header {
+  font-size: 100px;
+  text-transform: uppercase; }
+
+h2 {
+  font-size: 100px;
+  text-align: center;
+  text-rendering: optimizeLegibility; }
+  @media all and (min-width: 1281px) {
+    h2 {
+      font-size: 150px; } }
