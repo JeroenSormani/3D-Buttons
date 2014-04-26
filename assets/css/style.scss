@@ -21,8 +21,8 @@ body {
 #colorMenu li a {
 	border: 1px solid rgba(0,0,0,0.1);
 	border-radius: 100%;
-	width: #{(100/length($buttons))-(1)}vh;
-	height: #{(100/length($buttons))-(1)}vh;
+	width: #{(100/$buttons)-(1)}vh;
+	height: #{(100/$buttons)-(1)}vh;
 	margin: .5vh 0 0;
 	display: block;
 }

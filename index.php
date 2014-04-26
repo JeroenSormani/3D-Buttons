@@ -4,6 +4,7 @@
 	<head>
 		<meta charset='utf-8'>
 		<link href='assets/css/style.css' rel='stylesheet'>
+		<link href='assets/css/3d-buttons.css' rel='stylesheet'>
 		<link href='assets/css/fullPage.css' rel='stylesheet'>
 		
 		<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
@@ -61,6 +62,7 @@
 				<h1 class='header'>3D-Buttons</h1>
 				<p>A collection of 3D buttons made with CSS. Easy to use, configure and edit to your desire.</p><p> Add classes to select color and size of your button.</p>
 				<p><a class='btn btn-hu btn-blue'>Download on GitHub</a></p>
+				<p>By <a href='http://www.jeroensormani.com/' target='_BLANK' title='Jeroen Sormani'>Jeroen Sormani</a>, <a href='http://www.jeroensormani.com/donate/' target='_BLANK'>donate</a> if you like.</p>
 			
 			</div>
 			
