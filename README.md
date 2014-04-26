@@ -3,7 +3,7 @@
 3D Buttons gives you an variaty of nice looking conversion magnet buttons to place on your website.
 
 ##Usage
-To use 3D Buttons on your website, you first need to implement the 3d-buttons.css stylesheet between your `<head>`.
+To use 3D Buttons on your website, you first need to implement the 3d-buttons.css stylesheet between your `<head></head>`.
 
 ```html
 <head>
@@ -11,24 +11,50 @@ To use 3D Buttons on your website, you first need to implement the 3d-buttons.cs
 </head>
 ```
 
-After that you can use the classes `btn btn-[color] btn-[size]`
+After that you can use the classes `.btn .btn-[color] .btn-[size]`
 
 
-*Note: be sure to replace "vendor" in the CSS with the applicable vendor prefixes (webkit, moz, etc)*
 
 ### Button colors
-The following button colors are available at the moment
-Red -> `.btn-red`
-Blue ->`.btn-blue`
+The following button color classes are available at the moment
+
+```css
+.btn-red
+.btn-blue
+.btn-darkblue
+.btn-turquoise
+.btn-green
+.btn-yellow
+.btn-pink
+.btn-purple
+.btn-orange
+.btn-black
+.btn-brown
+.btn-white
+.btn-gray
+```
 
 ### Button sizes
-Extra Small -> `.btn-xs`
-Small Medium -> `.btn-sm`
-Medium -> `.btn-md`
-Large -> `.btn-lg`
-Extra Large -> `.btn-xl`
-Extra Extra Large -> `.btn-xxl`
-Huge -> `.btn-hu`
+
+```css
+.btn-xs
+.btn-sm
+.btn-md
+.btn-lg
+.btn-xl
+.btn-xxl
+.btn-hu
+```
+
+## Examples
+
+```HTML
+<a href='#' class='btn btn-xs btn-red'>Small Red Button</a>
+<a href='#' class='btn btn-md btn.green'>Medium Green Button</a>
+<a href='#' class='btn btn-lg btn-brown'>Large Brown Button</a>
+<a href='#' class='btn btn-hu btn-darkblue'>Biggest Darkblue button</a>
+
+```
 
 
 ## Contributing
