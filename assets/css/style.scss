@@ -1,0 +1,197 @@
+@import url('http://fonts.googleapis.com/css?family=Open+Sans');
+@import 'functions.scss';
+
+$btn-shadow: #e2e2e2;
+$btn-color-light: #fff;
+$btn-color-dark: #444;
+
+/**
+ * Button colors.
+ *
+ * Color name, Button color, darker color, background color
+ **/
+$buttons:(
+	red #d9534f #c02f2b #26acb0,
+	blue #3498db #2980b9,
+	darkblue #3E5975 #2c3e50 #c1a68a,
+	turqouise #4becc9 #40c6a8,
+	green #2ecc71 #27ae60,
+	yellow #ffcc00 #bba843,
+	pink #f19dC7 #d186b2,
+	purple #9b59b6 #8e44ad,
+	orange #f39c12 #eb8222,
+	black #4b4b4b #2b2b2b #b4b4b4,
+	brown #734B34 #402422 #8cb4cb,
+	white #fafafa #b6b6b6,
+	gray #cfd3d5 #84898a
+);
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	margin: 0px;
+}
+.row {
+	height: 100vh;
+	min-height: 450px;
+	text-align: center;
+	display: inline-block;
+	width: 100vw;
+}
+#colorMenu {
+	float: right;
+	right: 2vh;
+	position: fixed;
+	list-style: none;
+	margin-top: 5px;
+}
+#colorMenu li a {
+	border: 1px solid rgba(0,0,0,0.1);
+	border-radius: 100%;
+	width: #{(100/length($buttons))-(1)}vh;
+	height: #{(100/length($buttons))-(1)}vh;
+	margin: .5vh 0 0;
+	display: block;
+}
+#colorMenu li a.active {
+	animation-name: flip-left;
+	-webkit-animation-name: flip-left;
+}
+
+.header {
+	font-size: 100px;
+	text-transform: uppercase;
+}
+h2 {
+	font-size: 100px;
+	text-align: center;
+	text-rendering: optimizeLegibility;
+	@media all and (min-width: 1281px ) {
+		font-size: 150px;
+	}
+}
+
+.btn {
+	display: inline-block;
+	padding: 6px 12px;
+	margin-bottom: 0;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 1.42857143;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	cursor: pointer;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+	background-image: none;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	position: relative;
+}
+
+.btn-xs {
+	padding: 3px 7px;
+	font-size: 10px;
+	line-height: 1.5;
+	border-radius: 4px;
+	border-bottom-width: 3px;
+	box-shadow: 0px 2px 0px $btn-shadow;
+	&:active {
+		border-bottom-width: 1px;
+		top: 1px;
+	}
+}
+.btn-sm {
+	padding: 4px 9px;
+	font-size: 12px;
+	line-height: 1.5;
+	border-radius: 6px;
+	border-bottom-width: 4px;
+	box-shadow: 0px 2.2px 0px $btn-shadow;
+	&:active {
+		border-bottom-width: 1px;
+		top: 1px;
+	}
+}
+.btn-md {
+	padding: 6px 12px;
+	font-size: 12px;
+	line-height: 1.5;
+	border-radius: 7px;
+	border-bottom-width: 5px;
+	box-shadow: 0px 2.2px 0px $btn-shadow;
+	&:active {
+		border-bottom-width: 2px;
+		top: 2px;
+	}
+}
+.btn-lg {
+	padding: 10px 16px;
+	font-size: 18px;
+	line-height: 1.33;
+	border-radius: 9px;
+	border-bottom-width: 6px;
+	box-shadow: 0px 2.8px 0px $btn-shadow;
+	&:active {
+		border-bottom-width: 2px;
+		top: 2px;
+	}
+}
+.btn-xl {
+	padding: 14px 20px;
+	font-size: 24px;
+	line-height: 1.22;
+	border-radius: 10px;
+	border-bottom-width: 7px;
+	box-shadow: 0px 3.4px 0px $btn-shadow;
+	&:active {
+		border-bottom-width: 2px;
+		top:2px;
+	}
+}
+.btn-xxl {
+	padding: 20px 26px;
+	font-size: 30px;
+	line-height: 1.11;
+	border-radius: 12px;
+	border-bottom-width: 8px;
+	box-shadow: 0px 4px 0px $btn-shadow;
+	&:active {
+		border-bottom-width: 2px;
+		top: 1.75px;
+		margin-top: 4.5px;
+	}
+}
+.btn-hu {
+	padding: 26px 32px;
+	font-size: 36px;
+	line-height: 1;
+	border-radius: 15px;
+	border-bottom-width: 10px;
+	box-shadow: 0px 4px 0px $btn-shadow;
+	&:active {
+		border-bottom-width: 2px;
+		top: .75px;
+		margin-top: 7.5px;
+	}
+}
+
+
+@each $color in $buttons {
+	.btn-#{nth($color,1)} {
+		color: text-contrast(nth($color,2));
+		background-color: #{nth($color,2)};
+		border-color: #{nth($color,3)};
+	}
+	.row.#{nth($color,1)} {
+/* 		background-color: invert( nth($color,2) ); Not ready yet */
+	}
+	.row.#{nth($color,1)} h2 {
+		color: nth($color,3);
+	}
+	#colorMenu .#{nth($color,1)} a {
+		background-color: nth($color,2);
+	}
+}
