@@ -64,7 +64,8 @@ h2 {
   background-image: none;
   border: 1px solid transparent;
   border-radius: 4px;
-  position: relative; }
+  position: relative;
+  text-decoration: none; }
 
 .btn-xs {
   padding: 3px 7px;
