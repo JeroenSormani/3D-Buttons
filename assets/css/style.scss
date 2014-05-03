@@ -13,7 +13,7 @@ body {
 }
 #colorMenu {
 	float: right;
-	right: #{(100/$buttons)+(1)}vh;
+	right: 20px;
 	position: fixed;
 	list-style: none;
 	margin-top: 5px;
