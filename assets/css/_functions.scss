@@ -1,9 +1,0 @@
-
-// Create function to get the right button text color
-@function text-contrast($background) {
-	@if lightness($background) < 95% {
-		@return $btn-color-light;
-	} @else {
-		@return $btn-color-dark;
-	}
-}
