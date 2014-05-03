@@ -1,5 +1,15 @@
 @import url('http://fonts.googleapis.com/css?family=Open+Sans');
-@import 'functions.scss';
+
+
+// Create function to get the right button text color
+@function text-contrast($background) {
+	@if lightness($background) < 95% {
+		@return $btn-color-light;
+	} @else {
+		@return $btn-color-dark;
+	}
+}
+
 
 $btn-shadow: #e2e2e2;
 $btn-color-light: #fff;
