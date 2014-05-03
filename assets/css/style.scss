@@ -13,7 +13,7 @@ body {
 }
 #colorMenu {
 	float: right;
-	right: #{(100/$buttons)}vh;
+	right: #{(100/$buttons)+(1)}vh;
 	position: fixed;
 	list-style: none;
 	margin-top: 5px;
@@ -41,4 +41,16 @@ h2 {
 	@media all and (min-width: 1281px ) {
 		font-size: 150px;
 	}
+}
+.text-link {
+	color: #2980B9;
+}
+.text-link:hover {
+	color: #3E5975;
+}
+
+#superContainer {
+	height: 100%;
+	position: relative;
+	-ms-touch-action: none;
 }

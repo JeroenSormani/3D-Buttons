@@ -60,4 +60,4 @@ The following button color classes are available at the moment
 ## Contributing
 When contributing add an codepen with a example.
 
-[Donations](http://www.jeroensormani.com/donate/) are always welcome and appreciated!
+[Donations](http://www.jeroensormani.com/donate/?utm_source=3D-Buttons&utm_medium=text%20link&utm_campaign=3D-Buttons%20Donation) are always welcome and appreciated!
