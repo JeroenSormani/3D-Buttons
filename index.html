@@ -9,10 +9,22 @@
 		<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
 		<script src='assets/js/jquery.fullPage.min.js' type='text/javascript'></script>
 		<title>3D-Buttons By Jeroen Sormani</title>
+		<meta name='description' content='A collection of nice looking 3D buttons made with CSS. Easy to use, configure and edit to your desire.'>
 		
 		<meta property="og:title" content="3D-Buttons By Jeroen Sormani" />
 		<meta property="og:url" content="http://jeroensormani.github.io/3D-Buttons/" />
 		<meta property="og:image" content="http://jeroensormani.github.io/3D-Buttons/assets/img/3D-Buttons-By-Jeroen-Sormani.png" />
+		
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		
+		  ga('create', 'UA-50426584-1', 'jeroensormani.github.io');
+		  ga('send', 'pageview');
+		  setTimeout("ga('send', 'event', { eventCategory: '10 seconds on page', eventAction: 'Read' })",10000);
+		</script>
 		
 	</head>
 	
@@ -41,7 +53,10 @@
 				<h1 class='header'>3D-Buttons</h1>
 				<p>A collection of 3D buttons made with CSS. Easy to use, configure and edit to your desire.</p>
 				<p> Add classes to select color and size of your button.</p>
-				<p><a class='btn btn-hu btn-blue' href='https://github.com/JeroenSormani/3D-Buttons'>Download on GitHub</a></p>
+				<p><a class='btn btn-hu btn-blue' onclick="ga('send', 'Button', 'Download on GitHub', 'Clicked');" href='https://github.com/JeroenSormani/3D-Buttons'>
+					Download on GitHub
+				</a></p>
+				
 				<p>By <a class='text-link' href='http://www.jeroensormani.com/' target='_BLANK' title='Jeroen Sormani'>Jeroen Sormani</a>, <a href='http://www.jeroensormani.com/donate/?utm_source=3D-Buttons&utm_medium=text%20link&utm_campaign=3D-Buttons%20Donation' class='text-link' target='_BLANK'>donate</a> if you like.</p>
 			</div>
 			<div class='row section red' data-anchor='red'>
@@ -191,27 +206,20 @@
 		<!-- .container -->
 	</body>
 	
-	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-	
-	  ga('create', 'UA-50426584-1', 'jeroensormani.github.io');
-	  ga('send', 'pageview');
-	  setTimeout("ga('send', 'event', { eventCategory: '10 seconds on page', eventAction: 'Read' })",10000);
-	</script>
-	
 	<script type='text/javascript'>
 		$( document ).ready( function() {
-			$(document).ready(function() {
-			  	$.fn.fullpage( {
-					 	easing: 'linear',
-					 	scrollingSpeed: 350,
-					 	anchors: [ 'home', 'red', 'blue', 'darkblue', 'turqouise', 'green', 'yellow', 'pink', 'purple', 'orange', 'black', 'brown', 'white', 'gray',	 ],
-					 	menu: '#colorMenu'
-			  	});
+		
+		  	$.fn.fullpage( {
+			 	easing: 'linear',
+			 	scrollingSpeed: 350,
+			 	anchors: [ 'home', 'red', 'blue', 'darkblue', 'turqouise', 'green', 'yellow', 'pink', 'purple', 'orange', 'black', 'brown', 'white', 'gray',	 ],
+			 	menu: '#colorMenu'
+		  	});
+			
+			$( 'body' ).on( 'click', 'a.btn', function() {
+				ga('send', 'Button', $( this ).attr( 'class' ), 'Clicked');
 			});
+			
 		});
 	</script>
 	

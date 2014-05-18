@@ -11,7 +11,8 @@ body {
 
 #colorMenu {
   float: right;
-  right: 6.69231vh;
+  width: 6.69231vh;
+  right: 0;
   margin-right: 20px;
   position: fixed;
   list-style: none;
