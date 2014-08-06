@@ -1,4 +1,4 @@
-@import url('http://fonts.googleapis.com/css?family=Open+Sans');
+@import url("http://fonts.googleapis.com/css?family=Open+Sans");
 /**
  * Button colors.
  *
@@ -10,7 +10,7 @@
   margin-bottom: 0;
   font-size: 14px;
   font-weight: normal;
-  line-height: 1.42857;
+  line-height: 1.42857143;
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
@@ -103,10 +103,12 @@
     margin-top: 8px; }
 
 .btn-red {
-  color: #fff;
+  color: white;
   background-color: #d9534f;
   border-color: #c02f2b; }
 
+.row.red {
+  /* 		background-color: invert( nth($color,2) ); Not ready yet */ }
 
 .row.red h2 {
   color: #c02f2b; }
@@ -115,10 +117,12 @@
   background-color: #d9534f; }
 
 .btn-blue {
-  color: #fff;
+  color: white;
   background-color: #3498db;
   border-color: #2980b9; }
 
+.row.blue {
+  /* 		background-color: invert( nth($color,2) ); Not ready yet */ }
 
 .row.blue h2 {
   color: #2980b9; }
@@ -127,22 +131,26 @@
   background-color: #3498db; }
 
 .btn-darkblue {
-  color: #fff;
-  background-color: #3E5975;
+  color: white;
+  background-color: #3e5975;
   border-color: #2c3e50; }
 
+.row.darkblue {
+  /* 		background-color: invert( nth($color,2) ); Not ready yet */ }
 
 .row.darkblue h2 {
   color: #2c3e50; }
 
 #colorMenu .darkblue a {
-  background-color: #3E5975; }
+  background-color: #3e5975; }
 
 .btn-turqouise {
-  color: #fff;
+  color: white;
   background-color: #4becc9;
   border-color: #40c6a8; }
 
+.row.turqouise {
+  /* 		background-color: invert( nth($color,2) ); Not ready yet */ }
 
 .row.turqouise h2 {
   color: #40c6a8; }
@@ -151,10 +159,12 @@
   background-color: #4becc9; }
 
 .btn-green {
-  color: #fff;
+  color: white;
   background-color: #2ecc71;
   border-color: #27ae60; }
 
+.row.green {
+  /* 		background-color: invert( nth($color,2) ); Not ready yet */ }
 
 .row.green h2 {
   color: #27ae60; }
@@ -163,10 +173,12 @@
   background-color: #2ecc71; }
 
 .btn-yellow {
-  color: #fff;
+  color: white;
   background-color: #ffcc00;
   border-color: #bba843; }
 
+.row.yellow {
+  /* 		background-color: invert( nth($color,2) ); Not ready yet */ }
 
 .row.yellow h2 {
   color: #bba843; }
@@ -175,22 +187,26 @@
   background-color: #ffcc00; }
 
 .btn-pink {
-  color: #fff;
-  background-color: #f19dC7;
+  color: white;
+  background-color: #f19dc7;
   border-color: #d186b2; }
 
+.row.pink {
+  /* 		background-color: invert( nth($color,2) ); Not ready yet */ }
 
 .row.pink h2 {
   color: #d186b2; }
 
 #colorMenu .pink a {
-  background-color: #f19dC7; }
+  background-color: #f19dc7; }
 
 .btn-purple {
-  color: #fff;
+  color: white;
   background-color: #9b59b6;
   border-color: #8e44ad; }
 
+.row.purple {
+  /* 		background-color: invert( nth($color,2) ); Not ready yet */ }
 
 .row.purple h2 {
   color: #8e44ad; }
@@ -199,10 +215,12 @@
   background-color: #9b59b6; }
 
 .btn-orange {
-  color: #fff;
+  color: white;
   background-color: #f39c12;
   border-color: #eb8222; }
 
+.row.orange {
+  /* 		background-color: invert( nth($color,2) ); Not ready yet */ }
 
 .row.orange h2 {
   color: #eb8222; }
@@ -211,10 +229,12 @@
   background-color: #f39c12; }
 
 .btn-black {
-  color: #fff;
+  color: white;
   background-color: #4b4b4b;
   border-color: #2b2b2b; }
 
+.row.black {
+  /* 		background-color: invert( nth($color,2) ); Not ready yet */ }
 
 .row.black h2 {
   color: #2b2b2b; }
@@ -223,22 +243,26 @@
   background-color: #4b4b4b; }
 
 .btn-brown {
-  color: #fff;
-  background-color: #734B34;
+  color: white;
+  background-color: #734b34;
   border-color: #402422; }
 
+.row.brown {
+  /* 		background-color: invert( nth($color,2) ); Not ready yet */ }
 
 .row.brown h2 {
   color: #402422; }
 
 #colorMenu .brown a {
-  background-color: #734B34; }
+  background-color: #734b34; }
 
 .btn-white {
-  color: #444;
+  color: #444444;
   background-color: #fafafa;
   border-color: #b6b6b6; }
 
+.row.white {
+  /* 		background-color: invert( nth($color,2) ); Not ready yet */ }
 
 .row.white h2 {
   color: #b6b6b6; }
@@ -247,13 +271,29 @@
   background-color: #fafafa; }
 
 .btn-gray {
-  color: #fff;
+  color: white;
   background-color: #cfd3d5;
   border-color: #84898a; }
 
+.row.gray {
+  /* 		background-color: invert( nth($color,2) ); Not ready yet */ }
 
 .row.gray h2 {
   color: #84898a; }
 
 #colorMenu .gray a {
   background-color: #cfd3d5; }
+
+.btn-spacegrey {
+  color: white;
+  background-color: #ccc3d5;
+  border-color: #84898a; }
+
+.row.spacegrey {
+  /* 		background-color: invert( nth($color,2) ); Not ready yet */ }
+
+.row.spacegrey h2 {
+  color: #84898a; }
+
+#colorMenu .spacegrey a {
+  background-color: #ccc3d5; }
